@@ -11,14 +11,25 @@ struct AppetizerListView: View {
     @StateObject var viewmodel=AppetizersListViewModel()
     
     var body: some View {
-        NavigationView{
-            List(viewmodel.appetizers){ appetizers in
-                AppetizersListCell(appetizers: appetizers)
+        ZStack{
+            NavigationView{
+                List(viewmodel.appetizers){ appetizers in
+                    AppetizersListCell(appetizers: appetizers)
+                }
+                .navigationTitle("Appetizers")
             }
-            .navigationTitle("Appetizers")
+            .onAppear(){
+                viewmodel.getappetizers()
+            }
+            if viewmodel.isloading{
+                LoadingView()
+            }
+           
         }
-        .onAppear(){
-            viewmodel.getappetizers()
+        .alert(item: $viewmodel.alertitem){ alertItem in
+            Alert(title:alertItem.title,
+                  message: alertItem.message,
+                  dismissButton: alertItem.dismissButton)
         }
     }
     
