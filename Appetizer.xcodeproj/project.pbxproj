@@ -26,6 +26,7 @@
 		1BB665FA2C070AF700AF310C /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB665F92C070AF700AF310C /* AppetizerDetailView.swift */; };
 		1BB665FD2C07175400AF310C /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB665FC2C07175400AF310C /* APButton.swift */; };
 		1BB665FF2C07185900AF310C /* APxdismissbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB665FE2C07185900AF310C /* APxdismissbutton.swift */; };
+		1BE818BC2C0A5AE400617108 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE818BB2C0A5AE400617108 /* User.swift */; };
 		1BF7A57B2C07A9B300621249 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF7A57A2C07A9B300621249 /* AccountViewModel.swift */; };
 		1BF7A57D2C07AB2800621249 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF7A57C2C07AB2800621249 /* String+Ext.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,7 @@
 		1BB665F92C070AF700AF310C /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 		1BB665FC2C07175400AF310C /* APButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
 		1BB665FE2C07185900AF310C /* APxdismissbutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APxdismissbutton.swift; sourceTree = "<group>"; };
+		1BE818BB2C0A5AE400617108 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1BF7A57A2C07A9B300621249 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		1BF7A57C2C07AB2800621249 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				1B73A3A22BFA1C0B00EFF60E /* Appetizer.swift */,
+				1BE818BB2C0A5AE400617108 /* User.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				1B7A8B772C04C56B005A5B5D /* Color+Ext.swift in Sources */,
 				1B73A39F2BFA1BC300EFF60E /* NetworkManager.swift in Sources */,
 				1BB665FD2C07175400AF310C /* APButton.swift in Sources */,
+				1BE818BC2C0A5AE400617108 /* User.swift in Sources */,
 				1B7A8B752C04C422005A5B5D /* LoadingView.swift in Sources */,
 				1B7A8B732C04BA11005A5B5D /* Alert .swift in Sources */,
 				1B73A3892BFA1A8400EFF60E /* AppetizerApp.swift in Sources */,

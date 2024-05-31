@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct User:Codable{
+    var FirstName       = ""
+    var LastName        = ""
+    var Email           = ""
+    var BirthDate       = Date()
+    var ExtraNapkin     = true
+    var  FrequentRefill = false
+}
