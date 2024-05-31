@@ -8,11 +8,32 @@
 import SwiftUI
 
 struct EmptyStates: View {
+    let imageName: String
+    let message:String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Color(.systemBackground)
+                .ignoresSafeArea(edges: .all)
+            
+            VStack{
+                Image(imageName)
+                    .resizable()
+                //    .scaledToFill()
+                    .frame(width:200,height:160)
+                
+                Text(message)
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.secondary)
+                    .padding()
+            }
+            .offset(y:-70)
+        }
     }
 }
 
 #Preview {
-    EmptyStates()
+    EmptyStates(imageName: "empty-order", message: "hi i am Ritik Raman")
 }
