@@ -8,19 +8,17 @@
 import SwiftUI
 
 struct orderview: View {
-    
-    @State private var orderitems = MockData.orderItem
-    
+    @EnvironmentObject var order : Order
     var body: some View {
         NavigationView{
             ZStack{
                 VStack{
                     List{
-                        ForEach(orderitems){ appetizers in
+                        ForEach(order.items){ appetizers in
                             AppetizersListCell(appetizers: appetizers)
                         }
                         .onDelete(perform: { indexSet in
-                            orderitems.remove(atOffsets: indexSet)
+                            order.items.remove(atOffsets: indexSet)
                         })
                     }
                     .listStyle(.insetGrouped)
@@ -33,7 +31,7 @@ struct orderview: View {
                     .padding(.bottom,25)
                 }
                 
-                if orderitems.isEmpty {
+                if order.items.isEmpty {
                     EmptyStates(imageName: "empty-order", message: "You have no item in order.\n Please add an appetizer!")
                 }
             }
