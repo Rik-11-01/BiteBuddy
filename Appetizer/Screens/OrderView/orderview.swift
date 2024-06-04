@@ -26,7 +26,7 @@ struct orderview: View {
                     Button{
                         
                     } label:{
-                        APButton(title: "9.99- place Order")
+                        APButton(title:"$\(order.totalprice,specifier:" %.2f" )-Place Order")
                     }
                     .padding(.bottom,25)
                 }
