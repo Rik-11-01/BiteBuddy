@@ -15,6 +15,7 @@ struct AppetizerListView: View {
             NavigationView{
                 List(viewmodel.appetizers){ appetizers in
                     AppetizersListCell(appetizers: appetizers)
+                        .listRowSeparator(.hidden)
                         .onTapGesture {
                             viewmodel.selectedappetizer=appetizers
                             viewmodel.isshowingdetail=true
@@ -22,6 +23,7 @@ struct AppetizerListView: View {
                         }
                 }
                 .navigationTitle("Appetizers")
+                .listStyle(.plain)
                 .disabled(viewmodel.isshowingdetail)
             }
             .onAppear(){
