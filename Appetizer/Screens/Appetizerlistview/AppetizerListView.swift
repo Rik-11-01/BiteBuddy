@@ -26,7 +26,7 @@ struct AppetizerListView: View {
                 .listStyle(.plain)
                 .disabled(viewmodel.isshowingdetail)
             }
-            .onAppear(){
+            .task {
                 viewmodel.getappetizers()
             }
             .blur(radius: viewmodel.isshowingdetail ? 20 : 0 )
