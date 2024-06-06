@@ -9,7 +9,7 @@ is the main goal of this App.
 This App is not available on the App Store.
 
 ## Used Technologies
-- Swift 17
+- Swift 
 - SwiftUI
 - Codable
 - JSON
