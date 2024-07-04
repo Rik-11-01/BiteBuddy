@@ -3,7 +3,21 @@ BITEBUDDY is a take-home project to practice and learn iOS development. Learning
 is the main goal of this App.
 
 ## Screens
+<img width="342" alt="Screenshot 2024-07-04 at 6 12 39 PM" src="https://github.com/Rik-11-01/FoodOrderingApp/assets/105990860/defe8b75-761e-4f5b-a476-104e2a77c2d0">
+<img width="342" alt="Screenshot 2024-07-04 at 6 12 46 PM" src="https://github.com/Rik-11-01/FoodOrderingApp/assets/105990860/d768172e-ed48-49dc-aecc-06852acdb990">
 
+<img width="342" alt="Screenshot 2024-07-04 at 6 12 51 PM" src="https://github.com/Rik-11-01/FoodOrderingApp/assets/105990860/511ad3c4-26e4-42aa-b5ac-e780045b1a49">
+
+<img width="342" alt="Screenshot 2024-07-04 at 6 12 55 PM" src="https://github.com/Rik-11-01/FoodOrderingApp/assets/105990860/b8437fdf-a124-4c31-b39e-7911b4be6bf0">
+
+<img width="342" alt="Screenshot 2024-07-04 at 6 13 03 PM" src="https://github.com/Rik-11-01/FoodOrderingApp/assets/105990860/390ec9b2-659b-47c3-b803-5452dd3b0166">
+
+<img width="342" alt="Screenshot 2024-07-04 at 6 13 08 PM" src="https://github.com/Rik-11-01/FoodOrderingApp/assets/105990860/b89dc880-faeb-4550-a549-433b280d1c09">
+
+
+<img width="342" alt="Screenshot 2024-07-04 at 6 14 03 PM" src="https://github.com/Rik-11-01/FoodOrderingApp/assets/105990860/013eb7d7-3f5a-4924-9f7c-e959d07eb94b">
+
+<img width="342" alt="Screenshot 2024-07-04 at 6 14 11 PM" src="https://github.com/Rik-11-01/FoodOrderingApp/assets/105990860/92202095-1599-4151-8961-f3c7da4c2aba">
 
 ## App Store
 This App is not available on the App Store.
