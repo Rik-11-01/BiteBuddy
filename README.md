@@ -35,6 +35,7 @@ This App is not available on the App Store.
 - Codable
 - JSON
 - Combine (for getting JSON data)
+- FireBase
 ### SwiftUI
 - Form, Section
 - ProgressView
