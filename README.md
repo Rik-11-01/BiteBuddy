@@ -5,6 +5,7 @@ is the main goal of this App.
 ## Screens
 <img width="331" alt="Screenshot 2024-07-07 at 6 48 15 PM" src="https://github.com/Rik-11-01/BiteBuddy/assets/105990860/aba8abda-12c2-428b-bc18-0720f0c8c03c">
 <img width="331" alt="Screenshot 2024-07-07 at 6 48 26 PM" src="https://github.com/Rik-11-01/BiteBuddy/assets/105990860/5b82d767-1608-4fe4-8f3b-328f665dca6e">
+
 <img width="331" alt="Screenshot 2024-07-07 at 6 48 31 PM" src="https://github.com/Rik-11-01/BiteBuddy/assets/105990860/2bd25f2b-f1ec-47c3-ace5-fd78d52f7ac5">
 
 
