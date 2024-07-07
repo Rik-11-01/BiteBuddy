@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var viewmodel:AuthViewModel
+    @EnvironmentObject var viewmodell:AuthViewModel
 
     var body: some View {
         Group{
-            if viewmodel.usersession != nil{
-                Profile_View()
+            if viewmodell.usersession != nil{
+                AppetizerTabView()
             }else{
                 LoginView()
             }

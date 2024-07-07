@@ -10,7 +10,7 @@ import SwiftUI
 struct AccountView: View {
     @StateObject var viewmodel=AccountViewModel()
     @FocusState private var focustextfield:formtextfield?
-     
+    @EnvironmentObject var viewmodell : AuthViewModel
     enum formtextfield{
         case firstname,lastname,email
     }
@@ -18,6 +18,53 @@ struct AccountView: View {
     var body: some View {
         NavigationView{
             Form{
+                Section{
+                    if let user=viewmodell.currentuser{
+                        List{
+                            Section{
+                                HStack{
+                                    Text(user.initials)
+                                        .font(.title)
+                                        .fontWeight(.semibold)
+                                        .foregroundStyle(.white)
+                                        .frame(width: 72,height: 72)
+                                        .background(Color(.systemGray3))
+                                        .clipShape(Circle())
+                                    
+                                    VStack(alignment: .leading ,spacing: 4){
+                                        Text(user.fullname)
+                                            .fontWeight(.semibold)
+                                            .padding(.top,4)
+                                        Text(user.email)
+                                            .font(.footnote)
+                                            .tint(.gray)
+                                    }
+                                }
+                            }
+                            Section("General"){
+                                HStack{
+                                    SettingRowView(imagename: "gear", title: "Version", tintcolor: .gray)
+                                    
+                                    Spacer()
+                                    Text("1.0.0")
+                                        .font(.subheadline)
+                                }
+                            }
+                            Section("Account"){
+                                Button{
+                                    viewmodell.SignOut()
+                                }label:{
+                                    SettingRowView(imagename: "arrow.left.circle.fill", title: "Sign Out", tintcolor: .red)
+                                }
+            //                    Button{
+            //
+            //                    }label:{
+            //                        SettingRowView(imagename: "xmark.circle.fill", title: "Delete Account", tintcolor: .red)
+            //                    }
+                            }
+                        }
+                    }
+                }
                 Section( header: Text( "Personal Info")){
                     TextField("First name", text: $viewmodel.user.FirstName)
                         .focused($focustextfield,equals: .firstname)

@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct Profile_View: View {
-    @EnvironmentObject var viewmodel : AuthViewModel
+    @EnvironmentObject var viewmodell : AuthViewModel
     var body: some View {
-        if let user=viewmodel.currentuser{
+        if let user=viewmodell.currentuser{
             List{
                 Section{
                     HStack{
@@ -43,15 +43,15 @@ struct Profile_View: View {
                 }
                 Section("Account"){
                     Button{
-                        viewmodel.SignOut()
+                        viewmodell.SignOut()
                     }label:{
                         SettingRowView(imagename: "arrow.left.circle.fill", title: "Sign Out", tintcolor: .red)
                     }
-                    Button{
-                        
-                    }label:{
-                        SettingRowView(imagename: "xmark.circle.fill", title: "Delete Account", tintcolor: .red)
-                    }
+//                    Button{
+//                        
+//                    }label:{
+//                        SettingRowView(imagename: "xmark.circle.fill", title: "Delete Account", tintcolor: .red)
+//                    }
                 }
             }
         }

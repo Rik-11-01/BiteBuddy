@@ -6,13 +6,21 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct AppetizerApp: App {
     var order = Order()
+    @StateObject var viewmodell = AuthViewModel()
+    init(){
+        FirebaseApp.configure()
+    }
     var body: some Scene {
         WindowGroup {
-            AppetizerTabView().environmentObject(order)
+        //    AppetizerTabView().environmentObject(order)
+            ContentView()
+                .environmentObject(viewmodell)
+                .environmentObject(order)
         }
     }
 }
